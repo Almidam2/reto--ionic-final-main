@@ -7,23 +7,22 @@
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content>
   <form (ngSubmit)="enviarDatos()">
+    <ion-item lines="full" class="input-item">
+      <ion-label position="floating">Usuario:</ion-label>
+      <ion-input type="text" name="nombre" [(ngModel)]="usuario.username"></ion-input>
+    </ion-item>
 
-  <ion-item>
-    <ion-label>Usuario: </ion-label>
-    <ion-input  type="text" name="nombre" [(ngModel)]="usuario.username"></ion-input>
-  </ion-item>
+    <ion-item lines="full" class="input-item">
+      <ion-label position="floating">Contraseña:</ion-label>
+      <ion-input type="password" name="nombre" [(ngModel)]="usuario.contrasena"></ion-input>
+    </ion-item>
 
-  <ion-item>
-    <ion-label>Contraseña: </ion-label>
-    <ion-input  type="password" name="nombre" [(ngModel)]="usuario.contrasena"></ion-input>
-  </ion-item>
+    <ion-text>
+      <a href="tabs/registro" class="registro-link">¿No tienes cuenta? Regístrate</a>
+    </ion-text>
 
-  <a href="tabs/registro"> ¿No tienes cuenta? Registrate</a>
-
-  <ion-button type="submit()">Iniciar Sesión</ion-button>
-</form>
+    <ion-button expand="full" type="submit" class="submit-btn">Iniciar Sesión</ion-button>
+  </form>
 </ion-content>
-

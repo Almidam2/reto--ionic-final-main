@@ -1,0 +1,82 @@
+/* Global */
+ion-header {
+    --background: #ffffff !important;
+  }
+  
+  .titulo {
+    font-size: 1.5rem !important;
+    color: #4f4f4f !important;
+    font-weight: 600 !important;
+  }
+  
+  .perfil {
+    color: #4f4f4f !important;
+    font-size: 1.5rem !important;
+    margin-left: auto !important;
+  }
+  
+  ion-content {
+    --background: #ffffff !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+  }
+  
+  form {
+    width: 90% !important;
+    max-width: 400px !important;
+    margin-left: 20px;
+    margin-top: 150px;
+    height: 300px;
+    background-color: white !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  input, textarea {
+    border-radius: 10px !important;
+    font-size: 1rem !important;
+    padding: 10px !important;
+  }
+  
+  .input-item {
+    margin-bottom: 15px !important;
+  }
+  
+  ion-label {
+    font-size: 1rem !important;
+    color: #666 !important;
+  }
+  
+  ion-button.submit-btn {
+    background-color: #3b5998 !important;
+    font-size: 1.1rem !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    color: white !important;
+    margin-top: 50px !important;
+  }
+  
+  ion-button.submit-btn:hover {
+    background-color: #2d4373 !important;
+    margin-top: 50px !important;
+  }
+  
+  .registro-link {
+    color: #3b5998 !important;
+    text-align: center !important;
+    display: block !important;
+    margin-top: 10px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .registro-link:hover {
+    text-decoration: underline !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }

@@ -28,13 +28,6 @@ export class Tab3Page {
     { imageUrl: 'https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2020/08/panel-playstation-xbox-e3-2014-2036135.jpg?tf=3840x' },
     { imageUrl: 'https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2020/08/panel-playstation-xbox-e3-2014-2036135.jpg?tf=3840x' },
     { imageUrl: 'https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2020/08/panel-playstation-xbox-e3-2014-2036135.jpg?tf=3840x' },
-    { imageUrl: 'https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2020/08/panel-playstation-xbox-e3-2014-2036135.jpg?tf=3840x' },
-    { imageUrl: 'https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2020/08/panel-playstation-xbox-e3-2014-2036135.jpg?tf=3840x' },
-    { imageUrl: 'https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2020/08/panel-playstation-xbox-e3-2014-2036135.jpg?tf=3840x' },
-    { imageUrl: 'https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2020/08/panel-playstation-xbox-e3-2014-2036135.jpg?tf=3840x' },
-    { imageUrl: 'https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2020/08/panel-playstation-xbox-e3-2014-2036135.jpg?tf=3840x' },
-    { imageUrl: 'https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2020/08/panel-playstation-xbox-e3-2014-2036135.jpg?tf=3840x' },
-    { imageUrl: 'https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2020/08/panel-playstation-xbox-e3-2014-2036135.jpg?tf=3840x' },
   ];
 
 }

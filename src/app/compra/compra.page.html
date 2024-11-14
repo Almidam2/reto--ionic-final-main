@@ -5,6 +5,7 @@
       <ion-icon name="person-circle-outline" class="perfil" (click)="perfil()"></ion-icon> 
     </ion-item>
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
@@ -12,9 +13,6 @@
     <ion-item>
       <img [src]="'https://albertox3.duckdns.org/ws/producto/getPic/' + producto.id" />
       <p>{{ producto.nombre }} - {{ producto.precio }}€</p>
-      <ion-button *ngIf="producto.tipo === 'movil' || producto.tipo === 'consola'" (click)="reparar(producto)">
-        Reparar
-      </ion-button>
     </ion-item>
   </ion-list>
   <ion-button expand="full" (click)="onClick()">Confirmar</ion-button>

@@ -30,7 +30,6 @@ export class JuegosPage implements OnInit {
       this.router.navigate(['../tabs/perfil']);
     }
   }
-  
 
   Comprar(producto: any){
     const usuario = JSON.parse(localStorage.getItem('usuario') || '{}');

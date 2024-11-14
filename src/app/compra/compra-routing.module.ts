@@ -6,8 +6,10 @@ import { CompraPage } from './compra.page';
 const routes: Routes = [
   {
     path: '',
-    component: CompraPage
-  }
+    component: CompraPage,
+    children: [
+    ]
+  },
 ];
 
 @NgModule({

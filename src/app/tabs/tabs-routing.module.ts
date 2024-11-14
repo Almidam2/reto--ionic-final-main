@@ -12,10 +12,6 @@ const routes: Routes = [
         loadChildren: () => import('../servicio/juegos/juegos.module').then(m => m.JuegosPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../ubicacion/tab2.module').then(m => m.Tab2PageModule)
-      },
-      {
         path: 'tab3',
         loadChildren: () => import('../galeria/tab3.module').then(m => m.Tab3PageModule)
       },
@@ -50,7 +46,7 @@ const routes: Routes = [
       {
         path: 'editar',
         loadChildren: () => import('../editar/editar.module').then(m => m.EditarPageModule)
-      }
+      },     
     ]
   },
   {

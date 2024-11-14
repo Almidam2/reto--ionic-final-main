@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Formulario de Reparación</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item>
+      <ion-label>El producto es de juegalmi?</ion-label>
+      <ion-radio-group>
+        <ion-item>
+          <ion-label>Sí</ion-label>
+          <ion-radio value="sí"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Problema:</ion-label>
+      <ion-input type="text" name="descripcion" aria-placeholder="¿Qué problema tienes?"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Enviar</ion-button>
+  </form>
+</ion-content>
