@@ -1,0 +1,32 @@
+ion-icon.perfil {
+    margin-left: auto !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin-bottom: 10px!important;
+  }
+
+  ion-icon.perfil:hover {
+    color: #0054e9 !important; 
+  }
+
+  ion-label.titulo{
+    font-size: 20px !important;
+    color: black;
+  }
+
+
+ion-thumbnail {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important; 
+  height: 150px !important; 
+  overflow: hidden !important;
+
+}
+
+ion-thumbnail img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; 
+}

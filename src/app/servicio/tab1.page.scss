@@ -1,0 +1,49 @@
+ion-icon.perfil {
+    margin-left: auto !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin-bottom: 10px!important;
+  }
+
+  ion-icon.perfil:hover {
+    color: #0054e9 !important; 
+  }
+
+  ion-label.titulo{
+    font-size: 20px !important;
+    color: black;
+  }
+  
+  .horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 16px;
+  }
+  
+  ion-row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .game-card {
+    min-width: 150px; 
+    max-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 10px; 
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  ion-thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }

@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-label class="titulo">Galería</ion-label>
+      <ion-icon name="person-circle-outline" class="perfil" (click)="perfil()"></ion-icon> 
+      <ion-icon name="cart-outline" class="perfil" [routerLink]="['/tabs/compra']"></ion-icon>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4" *ngFor="let item of items">
+        <ion-thumbnail>
+          <img [src]="item.imageUrl" alt="Imagen">
+        </ion-thumbnail>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

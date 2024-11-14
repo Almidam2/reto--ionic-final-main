@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-label class="titulo">Perfil</ion-label>
+      <ion-icon name="cart-outline" class="perfil" [routerLink]="['/tabs/compra']"></ion-icon>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <form (ngSubmit)="enviarDatos()">
+
+  <ion-item>
+    <ion-label>Usuario: </ion-label>
+    <ion-input  type="text" name="nombre" [(ngModel)]="usuario.username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Contraseña: </ion-label>
+    <ion-input  type="password" name="nombre" [(ngModel)]="usuario.contrasena"></ion-input>
+  </ion-item>
+
+  <a href="tabs/registro"> ¿No tienes cuenta? Registrate</a>
+
+  <ion-button type="submit()">Iniciar Sesión</ion-button>
+</form>
+</ion-content>
+

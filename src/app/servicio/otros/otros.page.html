@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-label class="titulo">Otros dispositivos</ion-label>
+      <ion-icon name="person-circle-outline" class="perfil" (click)="perfil()"></ion-icon> 
+      <ion-icon name="cart-outline" class="perfil" [routerLink]="['/tabs/compra']"></ion-icon>
+    </ion-item>
+  </ion-toolbar>
+
+
+  <ion-tab-bar>
+    <ion-tab-button tab="juegos" href="tabs/tab1/juegos/">
+      <ion-label>Juegos</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="consolas" href="tabs/tab1/consolas/">
+      <ion-label>Consolas</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="otros" href="tabs/tab1/otros/" class="active">
+      <ion-label>Otros dispositivos</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="horizontal-scroll">
+    <ion-row>
+      <ion-col size="auto" *ngFor="let producto of productos" class="game-card">
+        <img [src]="'https://albertox3.duckdns.org/ws/producto/getPic/' + producto.id"/>
+        <p>{{ producto.nombre }} {{producto.precio}}€</p>
+        <div class="button-group">
+          <ion-button size="small" color="primary" (click)="Comprar(producto)">Comprar</ion-button>
+          <ion-button size="small" color="secondary" (click)="reparar(producto)">Reparar</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="horizontal-scroll">
+    <ion-row>
+      <ion-col size="auto" *ngFor="let producto of productos" class="game-card">
+        <img [src]="'https://albertox3.duckdns.org/ws/producto/getPic/' + producto.id"/>
+        <p>{{ producto.nombre }} {{producto.precio}}€</p>
+        <div class="button-group">
+          <ion-button size="small" color="primary" (click)="Comprar(producto)">Comprar</ion-button>
+          <ion-button size="small" color="secondary" (click)="reparar(producto)">Reparar</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="horizontal-scroll">
+    <ion-row>
+      <ion-col size="auto" *ngFor="let producto of productos" class="game-card">
+        <img [src]="'https://albertox3.duckdns.org/ws/producto/getPic/' + producto.id"/>
+        <p>{{ producto.nombre }} {{producto.precio}}€</p>
+        <div class="button-group">
+          <ion-button size="small" color="primary" (click)="Comprar(producto)">Comprar</ion-button>
+          <ion-button size="small" color="secondary" (click)="reparar(producto)">Reparar</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="horizontal-scroll">
+    <ion-row>
+      <ion-col size="auto" *ngFor="let producto of productos" class="game-card">
+        <img [src]="'https://albertox3.duckdns.org/ws/producto/getPic/' + producto.id"/>
+        <p>{{ producto.nombre }} {{producto.precio}}€</p>
+        <div class="button-group">
+          <ion-button size="small" color="primary" (click)="Comprar(producto)">Comprar</ion-button>
+          <ion-button size="small" color="secondary" (click)="reparar(producto)">Reparar</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
