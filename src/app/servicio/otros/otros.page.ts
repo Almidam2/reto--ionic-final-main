@@ -1,7 +1,8 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoadingController } from '@ionic/angular';
+import { LoadingController, ModalController } from '@ionic/angular';
 import { AppComponent } from 'src/app/app.component';
+import { FormularioModalComponent } from 'src/app/formulario-modal/formulario-modal.component';
 import { ServicioService } from 'src/app/servicio.service';
 import { Producto } from 'src/modelo/producto';
 
@@ -12,7 +13,7 @@ import { Producto } from 'src/modelo/producto';
 })
 export class OtrosPage implements OnInit {
 
-  constructor(private servicio: ServicioService, private router: Router, private app: AppComponent) { }
+  constructor(private servicio: ServicioService, private router: Router, private app: AppComponent, private modalController: ModalController ) { }
   public  productos: Producto[] = [];
   private loadingController = inject(LoadingController);
   usuario: any = {};
@@ -47,21 +48,30 @@ export class OtrosPage implements OnInit {
     }
   }
 
-  reparar(producto: any){
+  reparar(producto: any) {
     const usuario = JSON.parse(localStorage.getItem('usuario') || '{}');
     console.log('Usuario en guardia:', usuario);
-    if((usuario && usuario.username && usuario.contrasena)){
+  
+    if (usuario && usuario.username && usuario.contrasena) {
       console.log('LOGEADO');
-      producto.tipo="reparar"
+      producto.tipo = 'reparar';
       this.app.carrito.push(producto);
       console.log(this.app.carrito);
-      return true;
-    }else{
+  
+
+      this.openModal();
+    } else {
       console.log('NO LOGEADO');
-      alert("Inicia sesión para continuar");
-      this.router.navigate(['../tabs/perfil']);
-      return false;
+      alert('Inicia sesión para continuar');
+      this.router.navigate(['../tabs/perfil']); 
     }
+  }
+
+  async openModal() {
+    const modal = await this.modalController.create({
+      component: FormularioModalComponent, 
+    });
+    return await modal.present();
   }
 
   async getProductoMovil(){

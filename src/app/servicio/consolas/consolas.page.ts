@@ -38,15 +38,15 @@ export class ConsolasPage implements OnInit {
     if (usuario && usuario.username && usuario.contrasena) {
       console.log('LOGEADO');
       producto.tipo = 'reparar';
-      this.app.carrito.push(producto); // Añadir al carrito
+      this.app.carrito.push(producto);
       console.log(this.app.carrito);
   
-      // Abrir el modal con el formulario
+
       this.openModal();
     } else {
       console.log('NO LOGEADO');
       alert('Inicia sesión para continuar');
-      this.router.navigate(['../tabs/perfil']); // Redirigir al perfil
+      this.router.navigate(['../tabs/perfil']); 
     }
   }
   
